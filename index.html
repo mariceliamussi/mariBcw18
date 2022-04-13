@@ -16,10 +16,9 @@
 
 <body>
     <div class="header">
-        <img src="./img/logo-dark.png" alt="logo da SoulCode" srcset="Imagem do logo">
-        <h1>Bootcamp de Java Spring com Angular Web [19] </h1>
-        <p>Turma de desenvolvimento Web Full Stack da SoulCode Acadamy</p>
-
+        <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+        <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
+        <p>Turma de desenvolvimento Web Full Stack da SoulCode Academy</p>
     </div>
     <header class="topnav">
         <ul>
@@ -34,98 +33,110 @@
             <div class="column">
                 <h1>Primeira Fase</h1>
                 <div class="gallery">
-                    <a target="_blank" href="./img/imagem3.jpg">
-                        <img src="./img/imagem3.jpg" alt="Fase 1">
+                    <a target="_blank" href="/img/imagem3.jpg">
+                        <img src="/img/imagem3.jpg" alt="Fase 1">
                     </a>
                     <div class="desc">
                         Inscrição no site oficial, execução do teste de lógica,
                         curso da trilha zero e montagem do Pitch.
                     </div>
-                </div>              
+                </div>
             </div>
             <div class="column">
                 <h1>Segunda Fase</h1>
                 <div class="gallery">
-                    <a target="_blank" href="./img/imagem2.jpg">
-                        <img src="./img/imagem2.jpg" alt="Fase 2">
+                    <a target="_blank" href="/img/imagem2.jpg">
+                        <img src="/img/imagem2.jpg" alt="Fase 2">
                     </a>
                     <div class="desc">
                         Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
                         nesta fase se analisa a elegibilidade para a bolsa de estudos
                         perante os clientes e o candidato.
                     </div>
-                </div>              
+                </div>
             </div>
             <div class="column">
                 <h1>Terceira Fase</h1>
                 <div class="gallery">
-                    <a target="_blank" href="./img/imagem1.jpg">
-                        <img src="./img/imagem1.jpg" alt="Fase 3">
+                    <a target="_blank" href="/img/imagem1.jpg">
+                        <img src="/img/imagem1.jpg" alt="Fase 3">
                     </a>
                     <div class="desc">
                         Dinâmica em grupo com a realização de teste on-line e
                         convocação dos alunos aprovados.
                     </div>
-                </div>              
+                </div>
             </div>
         </div>
-        <div class="divisorbase" id="cadastro">
+
+        <div class="formContainer" id="cadastro">
             <form action="#" method="">
                 <div>
                     <input type="hidden" id="id">
                 </div>
-                <div>
-                    <label for="nome">Nome: </label>
-                    <input type="text" id="nome" placeholder="Entre com seu nome">
+
+                <div class="formRow">
+                    <div class="col-20"><label for="nome">Nome: </label></div>
+                    <div class="col-70"> <input type="text" id="nome" placeholder="Entre com seu nome"></div>
                 </div>
-                <div>
-                    <label for="email">E-Mail: </label>
-                    <input type="email" id="email" placeholder="Entre com seu e-mail">
+                <div class="formRow">
+                    <div class="col-20"><label for="email">E-Mail: </label></div>
+                    <div class="col-70"><input type="email" id="email" placeholder="Entre com seu e-mail"></div>
                 </div>
-                <div>
-                    <label for="nascimento">Data de Nascimento: </label>
-                    <input type="date" id="nascimento">
+                <div class="formRow">
+                    <div class="col-20"><label for="nascimento">Data de Nascimento: </label></div>
+                    <div class="col-70"><input type="date" id="nascimento"></div>
                 </div>
-                <div>
-                    <input type="checkbox" id="deficiencia">
-                    <label for="deficiencia">Deficiencia </label>
+                <div class="formRow">
+                    <div class="col-20"><label for="deficiencia">Deficiencia </label></div>
+                    <div class="col-70"><input type="checkbox" id="deficiencia"></div>
                 </div>
-                <div>
-                    <label for="senha">Senha: </label>
-                    <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14">
+                <div class="formRow">
+                    <div class="col-20"><label for="senha">Senha: </label></div>
+                    <div class="col-70">
+                        <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14">
+                    </div>
                 </div>
-                <div>
-                    <label for="escolaridade">Nível Escolar:</label>
-                    <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="F1"> Fundamental<br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Médio <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="B1"> Bacharel <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="L1"> Licenciado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="P1"> Pós Graduado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="P2"> Mestrado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="P3"> Doutorado <br>
-                </div>
-                <div>
-                    <label for="experiencia">Qual foi sua experiência com programação:</label>
-                    <input type="range" id="experiencia" min="5" max="50" 
-                    oninput="display.value=value" onchange="display.value=value">
-                    <input type="text" id="display" value="0" 
-                    oninput="experiencia.value=value" onchange="experiencia.value=value" maxlength="3" size="3">
-                </div>
-                <div>
-                    <label for="descricao">Descrição da Experiência: </label><br>
-                    <textarea id="descricao" cols="70" rows="5" placeholder="Entre com as tecnologias"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </div>
+                <div class="formRow">
+                    <div class="col-20"><label for="escolaridade">Nível Escolar:</label></div>
+                    <div class="col-70">
+                        <input type="radio" name="escolaridade" id="escolaridade" value="F1"> Fundamental<br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Médio <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="B1"> Bacharel <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="L1"> Licenciado <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="P1"> Pós Graduado <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="P2"> Mestrado <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="P3"> Doutorado <br>
+                    </div>
+                    <div class="formRow">
+                        <div class="col-20"><label for="experiencia">Qual foi sua experiência com programação:</label>
+                        </div>
+                        <div class="col-70"> <input type="range" id="experiencia" min="5" max="50"
+                                oninput="display.value=value" onchange="display.value=value">
+                            <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                                onchange="experiencia.value=value" maxlength="3" size="3">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="col-20"><label for="descricao">Descrição da Experiência: </label><br></div>
+                        <div class="col-70">
+                            <textarea id="descricao" cols="70" rows="5"
+                                placeholder="Entre com as tecnologias"></textarea>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="col-70">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </div>
+                    </div>
             </form>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        Direitos Reservados a SoulCode Academy
+        Alameda Santos VIP Cooworking 1117 Jardins São Paulo - SP
     </footer>
 </body>
 
