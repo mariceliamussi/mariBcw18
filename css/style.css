@@ -45,18 +45,6 @@ body{
     padding: 15px;
 }
 
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px){
-    .column{
-        width: 100%;
-    }
-}
-
 div.gallery{
     margin-left: auto;
     margin-right: auto;
@@ -142,6 +130,46 @@ input[type=reset]:hover{
     justify-items: flex-start;
 }
 
+.leftColumn{
+    float: left;
+    width: 75%;
+}
+
+.rightColumn{
+    float: left;
+    width: 25%;
+    background-color: aliceblue;
+    padding-left: 20px;
+}
+
+.img{
+    background-color: #ccc;
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row{
+    content: "";
+    display: table;
+    clear: both;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .footer {
     padding: 20px;
     text-align: center;
@@ -151,3 +179,35 @@ input[type=reset]:hover{
     font-weight: bold;
 }
 
+@media screen and (max-width: 400px) {
+    .leftColumn,
+    .rightColumn{
+        width: 100%;
+        padding: 0;
+    }
+    .topnav a{
+        float: none;
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 600px){
+    .col-20,
+    .col-70,
+    input[type=submit],
+    input[type=reset]{
+        width: 100%;
+        margin-top: 0;
+    }
+    .column{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .leftColumn,
+    .rightColumn{
+        width: 100%;
+        padding: 0;
+    }    
+}
